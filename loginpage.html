@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="basic02.css">
+    <title>로그인</title>
+
+    <style>
+        /* 로그인 화면 전체 틀 */
+        .login-main{position: absolute;
+                    width: 600px;
+                    height: 100%;
+                    /*background-color: aqua;*/
+                    text-align: center;
+                    }
+        /* 상단 로그인 로고 */
+        .login-main-ment{width: 100%;
+                        height: 130px;
+                        /*background-color: brown;*/
+                        line-height: 130px;
+                        font-size: 2.5rem;
+                        }
+
+        /* 기존회원, 비회원주문조회 부분 */
+        .a{margin-left: 178px;
+            }
+        .a li{width: 120px;
+            border: 1px solid black;
+            height: 36px;
+            float: left;
+            line-height: 36px;
+            margin-top: 10px;
+            }
+        .a li:hover{background-color: rgb(158, 157, 157);
+                    }
+        .a li:first-child{border-radius: 10px 0px 0px 10px;
+                        border-right: 0px;
+                        }
+        .a li:last-child{border-radius: 0px 10px 10px 0px;
+                        }
+        
+        /* 아이디 입력 부분 */
+        .b input{margin-top: 24px;
+                width: 240px;
+                height: 36px;
+                font-size: 18px;
+                }
+        
+        /* 비밀번호 입력 부분 */
+        .c input{margin-top: 20px;
+            width: 240px;
+            height: 36px;
+            font-size: 18px;
+            }
+
+        /* 아이디저장, 자동로그인 부분 */
+        .d li:first-child{float: left;
+                        margin-left: 180px;
+                        margin-top: 2px;
+                        }
+        .d li:last-child{float: left;
+                        margin-top: 2px;
+                        }
+        
+        /* 로그인 버튼 부분 */
+        .e{margin-top: 36px;
+            }
+        .e button{width: 240px;
+                height: 36px;
+                font-size: 18px;}
+
+        /* 회원가입, 아이디찾기, 비밀번호찾기 부분 */
+        
+        .f li:nth-child(1){float: left;
+                            margin-left: 185px;
+                            font-size: 13px;}
+        .f li:nth-child(2){float: left;
+                        font-size: 13px;
+                        }
+        .f li:nth-child(3){float: left;
+                        font-size: 13px;
+                        }
+        /* 네이버,카카오,페이스북 로그인 버튼 부분 */
+        .g{margin-top: 60px;
+            position: relative;
+            }
+        .g button{width: 240px;
+                height: 36px;
+                font-size: 18px;
+                }
+        .g li:nth-child(1){height: 48px;}
+        .g li:nth-child(2){height: 48px;}
+
+    </style>
+
+</head>
+<body>
+    <!-- 페이지 전체 부분 -->
+    <div class="login-main">
+
+        <!-- 로그인글씨 부분 -->
+        <h1 class="login-main-ment">로그인</h1>
+
+        <div class="a">
+            <ul>
+                <li class="a-1"><a href="#">기존회원</a></li>
+                <li class="a-2"><a href="#">비회원 주문조회</a></li>
+            </ul>
+        </div>
+
+        <div class="b">
+            <ul>
+                <!-- 아이디 입력창 -->
+                <li><input type="text"></li>
+            </ul>
+        </div>
+
+            <div class="c">
+                <ul>
+                    <!-- 비밀번호 입력창 -->
+                    <li><input type="password"></li>
+                </ul>
+            </div>
+            
+            <div class="d">
+                <ul>
+                    <li><input type="checkbox" name="id">아이디저장</li>
+                    <li>&nbsp;&nbsp;<input type="checkbox" name="id">자동로그인</li>
+                    
+                </ul>
+            </div>
+
+        <div class="e">
+            <ul>
+                <li><button>로그인</button></li>
+            </ul>
+        </div>
+
+        <div class="f">
+            <ul>
+                <li><a href="membership.html" target="_blank">회원가입 |</a></li>
+                <li><a href="id-find01.html" target="_blank">&nbsp;아이디 찾기 |</a></li>
+                <li><a href="pass-find01.html" target="_blank">&nbsp;비밀번호 찾기</a></li>
+            </ul>
+        </div>
+
+        <div class="g">
+            <ul>
+                <li><button style="background-color: #2DB400">네이버 로그인</button></li>
+                <li><button style="background-color: #F7E600">카카오 로그인</button></li>
+                <li><button style="background-color: #3b5998 ">페이스북 로그인</button></li>
+            </ul>
+        </div>
+    </div>
+
+    
+</body>
+</html>

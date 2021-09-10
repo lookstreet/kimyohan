@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="basic02.css">
+    <title>비밀번호찾기(휴대전화찾기)</title>
+
+    <style>
+        /* 비밀번호찾기 화면 전체 틀 */
+        .id-find-main{position: absolute;
+                    width: 600px;
+                    height: 100%;
+                    /*background-color: aqua;*/
+                    text-align: center;
+                    }
+        /* 아이디찾기, 비밀번호찾기 버튼 */
+        .a{margin-left: 180px;
+            margin-top: 90px;
+            }
+        .a button{width: 120px;
+                height: 35px;
+                font-size: 15px;
+                }
+        #btn-1{border-radius: 8px 0px 0px 8px;
+                border-right: none;
+                }
+        #btn-2{border-radius: 0px 8px 8px 0px;
+                }
+        .a li:first-child{float: left;
+                        }
+        .a li:last-child{float: left;
+                        }
+
+        /* 휴대전화, 이메일 부분 */
+        .b{margin-top: 126px;
+            margin-left: 180px;
+            }
+        .b li:first-child{float: left;
+                        }
+        .b li:last-child{float: left;
+                        }
+            
+        /* 아이디 입력창 */
+        .add{margin-top: 160px;
+            }
+        .add input{width: 240px;
+                height: 35px;
+                }
+
+        /* 이름 입력창 */
+        .c{margin-top: 20px;
+            }
+        .c input{width: 240px;
+                height: 35px;
+                }
+
+        /* 전화번호 입력창 */
+        .d{margin-top: 20px;
+            }
+        .d input{width: 184px;
+                height: 35px;
+                float: left;
+                left: 120px;
+                margin-left: 178px;
+                }
+
+        /* 인증번호요청 버튼 */
+        .e{float: left;
+            }
+        .e button{height: 39px;
+                }
+
+        /* 인증번호 입력창 */
+        .f{margin-top: 80px;
+            }
+        .f input{width: 184px;
+                height: 35px;
+                float: left;
+                margin-left: 178px;
+                }
+
+        /* 인증번호 확인 버튼*/
+        .g{float: left;
+            }
+        .g button{width: 56px;
+                height: 39px;}
+
+        /* 비밀번호찾기 버튼 */
+        .h{margin-top: 150px;
+            }
+        .h button{width: 240px;
+                height: 40px;
+                }
+        
+    </style>
+
+</head>
+<body>
+    <!-- 아이디 찾기 페이지 전체 -->
+    <div class="id-find-main">
+
+       <!-- 아이디찾기, 비밀번호찾기 부분 -->
+       <div class="a">
+        <ul>
+            <li><button id="btn-1" onclick="location.href='id-find02.html'">아이디 찾기</button></li>
+            <li><button id="btn-2" onclick="location.href='pass-find02.html'">비밀번호 찾기</button></li>
+        </ul>
+    </div>
+
+        
+        <!-- 휴대전화, 이메일 부분 -->
+        <div class="b">
+            <ul>
+                <li><input type="radio" name="privacy">휴대전화</li>
+                <li>&nbsp;&nbsp;<input type="radio" name="privacy">이메일</li>
+            </ul>
+        </div>
+    
+        <!-- 아이디 입력창 -->
+        <div class="add">
+            <ul>
+                <li><input type="text" placeholder="아이디를 입력하세요" onfocus="this.placeholder=''" onblur="this.placeholder='아이디를 입력하세요'"></li>
+            </ul>
+        </div>
+
+        <!-- 이름 입력창 -->
+        <div class="c">
+            <ul>
+                <li><input type="text" placeholder="이름을 입력하세요" onfocus="this.placeholder=''" onblur="this.placeholder='이름을 입력하세요'"></li>
+            </ul>
+        </div>
+    
+        <!-- 휴대전화 입력창 -->
+        <div class="d">
+            <ul>
+                <li><input type="text" placeholder="전화번호를 입력하세요" onfocus="this.placeholder=''" onblur="this.placeholder='전화번호를 입력하세요'"></li>
+            </ul>
+        </div>
+        
+        <!-- 인증번호 요청부분 -->
+        <div class="e">
+            <ul>
+                <li><button>인증번호<br>요청</button></li>
+            </ul>
+        </div>
+        
+        <!-- 인증번호 입력 부분 -->
+        <div class="f">
+            <ul>
+                <li><input type="text" placeholder="인증번호를 입력하세요" onfocus="this.placeholder=''" onblur="this.placeholder='인증번호를 입력하세요'"></li>
+            </ul>
+        </div>
+        
+        <!-- 확인버튼 -->
+        <div class="g">
+            <ul>
+                <li><button>확인</button></li>
+            </ul>
+        </div>
+        
+        <!-- 비밀번호 찾기 버튼 -->
+        <div class="h">
+            <ul>
+                <li><button>비밀번호 찾기</button></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

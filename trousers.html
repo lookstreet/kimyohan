@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/076a9fcfa9.js" crossorigin="anonymous"></script>
+    <title>남성 쇼핑몰 : 룩엣미</title>
+
+</head>
+
+<link rel="stylesheet" href="basic02.css" type="text/css"/>
+
+<style>
+    .top-box{
+        width:960px;
+        height: 150px;
+        position: relative;
+        margin-bottom: 10px;
+       
+
+
+    }
+    .logo{
+        width: 200px;
+        position: absolute;
+        top:30px;
+        
+        margin-left: 0px;
+        border: 1px solid;
+        border-radius: 20px;
+        contain: content;
+        height: 100px;
+        
+        
+    }
+
+
+
+
+    .top-box-1{
+        position:absolute;
+        overflow: hidden;
+        right: 20px;
+        top:30px;
+        border: 1px solid;
+        border-radius: 20px;
+
+        
+    }
+    .top-box-1 li{
+        display: inline-block;
+        
+    }
+
+    .top-box-1-01{
+        
+        border-left: 1px solid ;
+    }
+    .top-box-1-02{
+        border-right: 1px solid;
+        border-left: 1px solid ;
+    }
+    .top-box-1 li>a{
+        display: inline-block;
+        padding: auto;
+        margin: 8px;
+        
+    }
+    .top-box-1 li:hover{
+        display: inline-block;
+        background-color: greenyellow;
+        border-radius: 20px;
+        
+    }
+
+    
+    #top-box-2{ 
+        background:white; 
+        width:300px; 
+        height:40px; 
+        line-height:40px; 
+        margin:10px;
+        left: 30px;
+        position:absolute;
+        left: 300px;
+        top:20px;
+        border: 1px solid;
+        border-radius: 20px;
+    }
+    #top-box-2 ul li{ 
+        float:left; 
+        width:100px; 
+        color:#fff; 
+        text-align:center; 
+    }
+    #top-box-2 ul li a{ 
+        color:black; 
+        font-weight:bold; 
+        display:block; 
+    }
+    #top-box-2 ul li a:hover{ 
+        background:greenyellow; 
+        border-radius: 20px;
+    }
+    #top-box-2 ul li dl.dropdown{ 
+        border:2px #ccc solid; 
+        background:white; 
+        display:none; 
+        border-radius: 10px; 
+    }
+    #top-box-2 ul li dl.dropdown dd{
+        height:30px; 
+        line-height:30px; 
+        border-bottom:1px #ccc solid; 
+    }
+    #top-box-2 ul li dl.dropdown a{ 
+        color:#333;  
+        padding:0 5px; 
+    }
+    #top-box-2 ul li dl.dropdown a:hover{ 
+        background:greenyellow; 
+        color:#fff; 
+    }
+    #top-box-2 ul li.menu2:hover .dropdown{ display:block; }
+
+    .top-box-2{
+        position: absolute;
+        bottom: 10px;
+        right:300px;
+        
+
+    }
+    .top-box-2 li{
+        
+        margin-left: 10px;
+        display: inline-block;
+    }
+    .top-box-2 li>a{
+        display: inline-block;
+        padding: 5px;
+        font-size: 14pt;
+        
+
+    }
+    .top-box-2 li:hover{
+        
+        margin-left: 10px;
+        display: inline-block;
+        background-color: greenyellow;
+    }
+
+    .main-box{
+        width: 960px;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .left-box{
+        width: 200px;
+        height: 480px;
+        border: 1px solid;
+        border-radius: 10px;
+        float: left;
+
+    }
+    .left-box h1{
+        text-align: center;
+        margin-top: 10px;
+        border-bottom: 1px solid;
+        
+
+    }
+    .left-box li{
+        
+        margin-top: 40px;
+        
+        
+        text-indent: 7rem;
+        border-bottom: 1px solid;
+        width: 70%;
+        margin-left: 20%;
+       
+        
+    }
+    .left-box li:hover{
+        text-indent: 7rem;
+        margin-top: 40px;
+        
+        background-color: greenyellow;
+
+    }
+    .middle-box{
+        width: 725px;
+        height: 480px;
+        border: 1px solid;
+        display: inline-block;
+        margin-left: 30px;
+        border-radius: 10px;
+    }
+  
+
+    
+    
+    .footer{
+    
+        width: 960px;
+        height: 200px;
+        margin-left: 0px;
+        border: 1px solid;
+        border-radius: 10px;
+        
+        
+    }
+
+    
+
+    .footer-box01{
+        width: 200px;
+        height: 120px;
+        position: relative;
+        
+        margin-top: 20px;
+        float: left;
+        text-align: center;
+        margin: 10px;
+        
+        
+
+    }
+    .footer-box02{
+        width: 220px;
+        height: 120px;
+        position: absolute;
+        margin-left: 300px;
+        
+        margin-top: 10px;
+        text-align: center;
+        
+
+        
+    }
+    .footer-box03{
+        width: 200px;
+        height: 120px;
+        position: absolute;
+        margin-left: 600px;
+        
+        margin-top: 10px;
+        text-align: center;
+    }
+    .footer li{
+        text-align: left;
+        margin-left: 20px;
+        margin: 10px;
+       
+    }
+    
+
+    .top-main{    /* 제품 상세페이지 센터, 구매하기 페이지 */
+            
+            width: 700px;
+            height: 480px;
+             background-color:white;}
+     
+     /*판매중인 상품 글자*/
+    .top-main>h1{color: rgb(255, 255, 255);
+                background-color: rgb(95, 95, 95);
+                margin-top: 15px;}
+
+    .goods{
+            margin-top: 30px;
+            margin-left: 40px ;
+           
+            float: left;
+    }
+
+    .main-text :hover{background: turquoise;
+                   }
+
+    .main-text{width: 255px;
+              height: 38px;
+              margin-top: 5px;
+              color: rgb(0, 0, 0);
+              font-weight: 1000;
+              border-top : 2px solid rgb(168, 227, 255);
+              padding-top: 3px;
+              background-color: rgb(201, 201, 201);
+
+    }
+
+    .goods>a>img{width: 250px;
+               height: 250px;
+               float: center;
+               padding: auto;
+               margin-right: 3px;
+               margin-top: 10px;
+               border: 3px solid rgb(187, 187, 187);
+               border-radius: 20px 20px 20px 20px;}
+
+    .text01{margin-left: 5px;
+
+        
+            font-weight: 900;}
+
+
+    .top-main01{
+        width: 960px;
+        height: 400px;
+        border: 1px solid;
+        display: inline-block;
+    }
+    
+    
+
+
+
+</style>
+
+
+<body>
+
+ 
+    <div class ="top-box">
+        <div class="logo"><a href="index.html" target="_blank"><img src="britishLogo.jpg" width= "200" height="100" alt=""></a></div>
+        <div class="top-box-1">
+            <ul>
+                <li><a href="loginpage.html" target="_blank">로그인</a></li>
+                <li class = "top-box-1-01"><a href="membership.html" target="_blank">회원가입</a></li>
+                <li class = "top-box-1-02"><a href="pbasket.html" target="_blank">장바구니</a></li>
+                <li><a href="ppayment.html" target="_blank">주문조회</a></li>
+            </ul>
+        </div>
+
+        <div id="top-box-2">
+            <ul>
+                <li class ="menu1"><a href="pintroduction.html">회사소개</a></li>
+                <li class ="menu2">
+                    <a herf="">쇼핑</a>
+                    <dl class="dropdown">
+                        <dd><a href="tshirtMain.html">티셔츠</a></dd>                        
+                        <dd><a href="trousers.html">바지</a></dd>
+                        <dd><a href="accessoryMain.html">악세서리</a></dd>
+
+
+
+                    </dl>
+                </li>
+                <li class ="menu3"><a href="cs.html">고객게시판</a></li>
+
+            </ul>
+        </div>
+</div>
+
+    <div class = "main-box">
+        <div class = "left-box">
+            <h1>Menu</h1>
+            <ul>
+                <li> <a href="tshirtMain.html">T-shirt</a></li>
+                <li> <a href="trousers.html">Trousers</a></li>
+                <li> <a href="accessoryMain.html">accessory</a></li>
+            </ul>
+
+
+        </div>
+
+        <div class = "middle-box" style="overflow: scroll;"> 
+            
+            <div class="top-main">
+                <h1>판매중인 상품 - 하의</h1>
+                    <hr/>
+                    <a href="jean.html">
+            <div class="goods">
+                    <img src="jeans-828693_1920.jpg" alt="찢어진 청바지">
+                <ul class="main-text">
+                    <li><span class="text01">상품명 : </span>찢어진 청바지</li>
+                    <li><span class="text01">가격 : </span>55,000원</li>
+                </ul>
+            </a>
+            </div>
+            <a href="skinnyjean.html">
+            <div class="goods">
+                    <img src="lonely-814631_1920.jpg" alt="스키니진">
+                <ul class="main-text">
+                    <li><span class="text01">상품명 : </span>스키니진</li>
+                    <li><span class="text01">가격 : </span>40,000원</li>
+                </ul>
+            </a>
+            </div>
+            <a href="brownjean.html">
+            <div class="goods">
+                    <img src="skateboard-1150036_1920.jpg" alt="면바지">
+                <ul class="main-text">
+                    <li><span class="text01">상품명 : </span>면바지</li>
+                    <li><span class="text01">가격 : </span>50,000원</li>
+                </ul>
+            </a>
+            </div>
+        </div>
+
+           
+
+
+        </div>
+
+    </div>
+
+
+
+
+    </div>
+
+    <footer class = "footer">
+
+        <div class = "footer-box01">
+            <h2>고객센터</h2>
+            <ul>
+                <li><i class="fas fa-phone-square-alt"></i> Tel: 02-1234-5678</li>
+                <li><i class="fas fa-running"></i> 평일: 09:00 - 18:00</li>
+                <li><i class="fas fa-stop-circle"></i> 휴무: 토/일/공휴일</li>
+                <li><i class="fas fa-map-marker-alt"></i> 서울시 관악구 신림동</li>
+            </ul>
+
+        </div>
+        
+        <div class = "footer-box02">
+            <h2>은행계좌</h2>
+            <ul>
+                <li><i class="fas fa-money-check-alt"></i> 국민은행 : 123-123-123</li>
+                <li><i class="fas fa-money-check-alt"></i> 신한은행 : 456-456-456</li>
+                <li><i class="fas fa-money-check-alt"></i> 우리은행 : 789-789-789</li>
+            </ul>
+
+        </div>
+            
+
+        <div class = "footer-box03">
+            <h2>SNS</h2>
+            <ul>
+                <li><a href="https://www.instagram.com/" target="_blank"> <i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://ko-kr.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i> Youtube</a></li>
+            </ul>
+
+
+        </div>
+
+        <div class ="footer-box04">
+
+
+        </div>
+
+        
+
+
+
+    </footer>
+    
+</body>
+</html>

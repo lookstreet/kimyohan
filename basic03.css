@@ -1,0 +1,9 @@
+@charset "UTF-8"; /*인코딩으로 인해 발생할 수 있는 문자 깨짐 방지 */
+*{margin: 0px; padding: 0px;}
+html, body{font-family: "Malgun Gothic", sans-serif, serif;
+           font-size: 13px;}
+body{width: 960px;
+    margin: 0px auto;}
+    a{text-decoration: none; color: black;}
+    li{list-style: none;}
+    img{margin: 0px; padding: 0px; border: 0px;}

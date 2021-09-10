@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="basic02.css">
+    <title>회원가입</title>
+
+    <style>
+        table{width: 100%;
+            border-top: 1px solid black;
+            border-collapse: collapse;
+            }
+        td{border-bottom: 1px solid black;
+            padding: 3px;
+            width: 110px;
+            height: 30px;
+            font-size: 14px;
+            /*background-color: blue;*/
+            }
+        input{height: 27px;
+            width: 130px;
+            }
+        .top{float: right;
+            margin-top: 20px;
+            }
+
+        .bottom{/*margin: 300px;*/
+                margin-top: 25px;
+                margin-left: 260px;
+                width: 70px;
+                }
+        .bottom-but{width: 80px;
+                    height: 35px;
+                    font-size: 15px;
+                    }
+                
+        span{color: blue;
+            }
+        
+        .post01{width: 250px;
+                float: left;
+                }
+        .post-but{height: 31px;
+                width: 70px;
+                font-size: 14px;
+                float: left;
+                }
+        .post02{width: 250px;
+                }
+        .post03{width: 250px;
+                }
+
+        #email-kinds{height: 22px;
+                    }
+        .emailselect{height: 60px;
+                    }
+
+    </style>
+
+</head>
+<body>
+    <form action="" method="POST">
+        <span class="top">*필수입력사항</span>
+        <table>
+            <!-- 회원가입창 상단 로고 -->
+            <tr>
+                <td colspan="4" align="center">회원 기본 정보</td>
+            </tr>
+
+            <tr>
+                <td><span>*</span>아이디</td>
+                <td colspan="3"><input type="text" name="id">
+                    (5~11자)
+                </td>
+            </tr>
+
+            <tr>
+                <td><span>*</span>비밀번호</td>
+                <td colspan="3"><input type="password" name="pass">
+                    (영문,숫자,특수문자 포함)
+                </td>
+            </tr>
+
+            <tr>
+                <td><span>*</span>비밀번호 확인</td>
+                <td colspan="3"><input type="password" name="pass"></td>
+            </tr>
+
+            <tr>
+                <td>이름</td>
+                <td colspan="3"><input type="text" name="name"></td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">주소</td>
+                <td colspan="2"><input type="text" name="post" class="post01">
+                    <button class="post-but">우편번호</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3"><input type="text" name="post-basic" class="post02">
+                    기본주소
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3"><input type="text" name="post-remainder" class="post03">
+                    나머지 주소(선택입력)
+                </td>
+            </tr>
+
+            <tr>
+                <td>일반전화</td>
+                <td colspan="3"><input type="text" name="phone">&nbsp;-&nbsp;
+                    <input type="text" name="phone">&nbsp;-&nbsp;
+                    <input type="text" name="phone">
+                </td>
+            </tr>
+
+            <tr>
+                <td><span>*</span>휴대전화</td>
+                <td colspan="3"><input type="text" name="cellphone">&nbsp;-&nbsp;
+                    <input type="text" name="cellphone">&nbsp;-&nbsp;
+                    <input type="text" name="cellphone">
+                </td>
+            </tr>
+
+            <tr>
+                <td><span>*</span>이메일</td>
+                <td colspan="3"><input type="text" name="email01" id="email01">
+                    @ <input type="text" name="email02" id="email02"> 
+                    <select name="email-select" id="email-select">
+                        <option value="" id="directinput">--직접 입력--</option>
+                        <option value="naver" id="naver">naver.com</option>
+                        <option value="daum" id="daum">daum.net</option>
+                        <option value="nate" id="nate">nate.com</option>
+                        <option value="google" id="google">google.com</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><span>*</span>생년월일</td>
+                <td colspan="3"><input type="date" name="birthday" id="birthday"></td>
+            </tr>
+        </table>
+
+        <div class="bottom">
+            <button class="bottom-but">회원가입</button>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Look at me - 제품 상세 페이지</title>
+    <link rel="stylesheet" href="basic03.css">
+<style>
+
+    /* 제품 상세페이지 센터, 구매하기 페이지 */
+    .center{float: right;
+                 width: 960px;
+                 background-color:white;}
+     
+     /*구매하기 글자*/
+    .center>h1{color: rgb(255, 255, 255);
+    background-color: rgb(95, 95, 95);
+margin-top: 15px;}
+     
+     /*선*/
+    .center>hr{border: 2px solid rgb(145, 145, 145);
+                      margin-bottom: 15px;
+                      }
+
+    .goods>img{width: 500px;
+               height: 500px;
+               float: center;
+               margin-right: 3px;
+               border: 3px solid rgb(187, 187, 187);
+               border-radius: 20px 20px 20px 20px;}
+               
+               .goods>ul{width: 450px;
+                height: 300px;
+                float: right;
+                box-sizing: border-box;}
+                /*background-color: cornflowerblue;*/
+                /*border: 3px solid rgb(187, 187, 187);*/
+                /*border-radius: 20px 20px 20px 20px;}*/
+               
+               .goods-title{font-weight: 900;}
+                            
+               .t1{text-indent: 10px;}
+               
+               .goods>ul>li{
+                        margin-left: 15px;
+                        padding: auto;
+                        margin-top: 10px;
+                        font-size: 1.3rem;
+                        font-family: sans-serif;}
+
+               .end{margin-top: 15px;}
+
+    .button01{width: 215px;
+              height: 40px;
+              font-size: 1.5rem;
+              background-color: rgb(187, 255, 0);
+              color: rgb(0, 0, 0);
+              border:black;
+              float: left;
+              margin-top: 20px;
+              margin-left: 8px;
+              font-weight: 900;}
+                    
+    .button02{width: 215px;
+              height: 40px;
+              font-size: 1.5rem;
+              background-color: rgb(36, 105, 255);
+              color: rgb(0, 0, 0);
+              border:black;
+              margin-top: 20px;
+              font-weight: 900;
+              float: left;
+              }
+
+              .button03{width: 430px;
+              height: 40px;
+              font-size: 1.5rem;
+              background-color: rgb(155, 155, 155);
+              color: rgb(0, 0, 0);
+              border:black;
+              margin-left: 8px;
+              margin-top: 20px;
+              font-weight: 900;
+              float: left;
+              }
+    
+    .end>button :hover{background: tomato;}
+
+</style>
+</head>
+<body>
+    <div class="center">
+        <h1>상품보기</h1>
+            <hr/>
+    <div class="goods">
+        <img src="jacket-2899728_1920.png" alt="트레이닝복 상의">
+        <ul>
+            <li><span class="goods-title">제품명 : </span>트레이닝복 상의</li>
+            <li><span class="goods-title">가&nbsp;&nbsp;&nbsp;격 : </span>40,000원</li>
+            <li><span class="goods-title">배송비 : </span>2,500원</li>
+            <li><span>(배송은 2~3일 소요됩니다.)</span></li>
+            <li><span class="goods-title">설&nbsp;&nbsp;&nbsp;명 : </span>러닝할때 입기 좋은 트레이닝복<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;땀 흡수가 잘 되어 기분을 상쾌하게 해줍니다.
+            <li><span class="goods-title">색&nbsp;&nbsp;&nbsp;상 : </span>
+                <select name="color" id="color">
+                <option value="청">청</option>
+            </select></li>
+            <li><span class="goods-title">사이즈 : </span>
+                <select name="size" id="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+            </select></li>
+            <li><span class="goods-title">수&nbsp;&nbsp;&nbsp;량 : </span>
+                <select name="amount" id="amount">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select></li>
+
+        <div class="end">
+            <ul>
+            <li>
+                <div class="button">
+                <li><a href="#"><input type="button" class="button01" value="장바구니" name="장바구니" id="장바구니"></a></li>
+            </div>
+                <div class="button">
+                <li><a href="#"><input type="button" class="button02" value="구매하기" name="구매하기" id="구매하기"></a></li>
+            </div>
+            <div class="button">
+                <li><a href="tshirtMain.html"><input type="button" class="button03" value="돌아가기" name="돌아가기" id="돌아가기"></a></li>
+            </div>
+            </li>
+        </ul>
+        </div>
+            </li>
+        </li>
+    </ul>
+</div>
+</button>
+
+    </div>
+</body>
+</html>
